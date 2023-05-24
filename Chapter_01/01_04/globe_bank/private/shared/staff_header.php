@@ -1,16 +1,8 @@
-<?php
-if (!isset($pageTitle)) {
-  $pageTitle = 'staff page';
-}
-?>
 <!doctype html>
 
 <html lang="en">
   <head>
-    <title>GBI - 
-      <?= $pageTitle; 
-      ?>
-    </title>
+    <title>GBI</title>
     <meta charset="utf-8">
     <link rel="stylesheet" media="all" href="../stylesheets/staff.css" />
   </head>
@@ -25,3 +17,4 @@ if (!isset($pageTitle)) {
         <li><a href="index.php">Menu</a></li>
       </ul>
     </navigation>
+
