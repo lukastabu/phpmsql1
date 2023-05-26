@@ -5,7 +5,7 @@
     ['id' => '1', 'position' => '1', 'visible' => '1', 'menu_name' => 'About Globe Bank'],
     ['id' => '2', 'position' => '2', 'visible' => '1', 'menu_name' => 'Consumer'],
     ['id' => '3', 'position' => '3', 'visible' => '1', 'menu_name' => 'Small Business'],
-    ['id' => '4', 'position' => '4', 'visible' => '1', 'menu_name' => 'Commercial'],
+    ['id' => '4', 'position' => '987', 'visible' => '1', 'menu_name' => 'Commercial'],
   ];
 ?>
 
@@ -37,7 +37,7 @@
           <td><?php echo $subject['position']; ?></td>
           <td><?php echo $subject['visible'] == 1 ? 'true' : 'false'; ?></td>
     	    <td><?php echo $subject['menu_name']; ?></td>
-          <td><a class="action" href="">View</a></td>
+          <td><a class="action" href="<?php echo url_for('/staff/subjects/show.php?id=' . $subject['id']); ?>">view</a></td>
           <td><a class="action" href="">Edit</a></td>
           <td><a class="action" href="">Delete</a></td>
     	  </tr>
