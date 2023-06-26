@@ -6,6 +6,8 @@ if ($test == '404') {
     error404();
 } elseif ($test == '500') {
     error500();
+} elseif ($test == 'redir') {
+    redirect_to('/staff/subjects/index.php');
 } else {
     echo 'No error';
 }
